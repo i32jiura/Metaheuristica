@@ -1,0 +1,16 @@
+libro--> pag 109.
+
+Generar población inicial:
+  tsp: Random shuffle.
+  kP: Generar 0 ó 1 aleatorio, e introducirlo. Mixta, n/2(P. ejem) Que entren y el resto aleatorios.
+
+evaluar población:
+  Tsp: comparar todos con el mejor actual y escoger el de menor camino
+  Kp: comparar todos con el mejor actual y elegir el de mayor beneficio que no exceda la capacidad de la mochila.
+
+selección:
+  Torneo.
+
+Recombinación:
+  Tsp: Cross over.
+  Kp: En principio, Cross over.

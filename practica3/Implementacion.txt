@@ -1,0 +1,4 @@
+metodos a implementar:
+
+	Simulated annealing
+	Iterated Greedy

@@ -1,0 +1,2763 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: salidas/graficaGrafoSA_2103/grafoSA_2103_0_250.png
+%%Creator: gnuplot 4.6 patchlevel 6
+%%CreationDate: Wed Apr 20 22:17:35 2016
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.6 (September 2012)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (salidas/graficaGrafoSA_2103/grafoSA_2103_0_250.png)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.6 patchlevel 6)
+  /Author (cristiangj)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Wed Apr 20 22:17:35 2016)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 936 M
+63 0 V
+6254 0 R
+-63 0 V
+546 936 M
+( 500) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1592 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 1000) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2248 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 1500) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2903 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 2000) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3559 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 2500) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4215 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 3000) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4871 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 3500) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4528 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1332 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2034 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 1000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 1500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3438 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 2000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4139 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 2500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 3000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5543 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 3500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6245 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 4000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4528 R
+0 -63 V
+0 -4668 R
+( 4500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4871 N
+630 280 L
+6317 0 V
+0 4591 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+LCb setrgbcolor
+6296 4738 M
+(Grafo) Rshow
+LT0
+6380 4738 M
+399 0 V
+2622 2811 M
+-111 534 V
+2400 1412 L
+5165 2811 L
+2956 2745 L
+1960 533 V
+2789 2745 L
+5629 3811 L
+642 -408 V
+5344 4411 L
+3401 2745 L
+3902 1745 L
+-835 -66 V
+2527 4561 L
+4068 4344 L
+919 -999 V
+2511 2278 L
+222 1600 V
+1778 2762 L
+54 599 V
+2292 450 V
+5772 2545 L
+2344 2811 L
+5379 2545 L
+5094 3611 L
+3012 2745 L
+5344 2212 L
+3902 2478 L
+4987 4411 L
+1850 1412 L
+4347 4078 L
+3178 3544 L
+2273 67 V
+4180 3544 L
+1306 267 V
+72 -733 V
+-1378 0 V
+-56 1333 V
+2511 3544 L
+-56 800 V
+835 -999 V
+1626 266 V
+5736 2278 L
+3012 1479 L
+2288 3278 L
+5558 2212 L
+3623 3078 L
+3345 1945 L
+2242 4511 L
+1796 3811 L
+3623 1479 L
+5486 3078 L
+1814 4244 L
+3457 1479 L
+-835 533 V
+556 1866 V
+1702 533 V
+4013 3811 L
+3679 1679 L
+3012 2811 L
+5094 4144 L
+3345 3078 L
+1607 800 V
+3290 3611 L
+4347 2278 L
+2733 4344 L
+5058 3611 L
+4987 2212 L
+2066 3544 L
+779 -733 V
+2010 2545 L
+5023 1412 L
+3290 2278 L
+2375 733 V
+3902 3544 L
+-56 267 V
+2845 1745 L
+389 1266 V
+-667 0 V
+55 -533 V
+556 1600 V
+2665 333 V
+3123 3544 L
+2678 1745 L
+1001 733 V
+501 -733 V
+1671 3536 L
+3316 275 V
+1850 2228 L
+1328 50 V
+-63 2266 V
+3679 1412 L
+2455 3878 L
+5522 1479 L
+2900 2012 L
+668 1866 V
+5308 3278 L
+392 1066 V
+3790 3878 L
+3512 2012 L
+5486 1679 L
+2122 3878 L
+3790 3011 L
+1768 800 V
+4987 2478 L
+2288 3078 L
+4987 1745 L
+2789 3011 L
+1600 2470 L
+4347 4411 L
+-56 -600 V
+5451 3278 L
+-1327 0 V
+-1446 0 V
+5379 3011 L
+4291 1745 L
+2010 1362 L
+5522 3011 L
+1796 3944 L
+3512 3011 L
+5023 4544 L
+5344 3345 L
+4013 1745 L
+5736 1479 L
+4124 3878 L
+3067 1945 L
+4880 4344 L
+2010 2478 L
+5201 1745 L
+1814 4277 L
+5344 4144 L
+1796 3378 L
+5165 1479 L
+3012 2212 L
+278 266 V
+3444 92 V
+2010 2212 L
+3012 3811 L
+1796 1529 L
+2955 4544 L
+5023 3544 L
+3290 4411 L
+4291 2478 L
+2622 2278 L
+2686 533 V
+4180 2212 L
+1520 0 V
+3012 2545 L
+210 1999 V
+2956 4344 L
+3568 2545 L
+2082 2078 L
+1903 1929 L
+54 2632 V
+2233 1945 L
+1885 4461 L
+3123 2012 L
+2613 733 V
+3067 3878 L
+-945 200 V
+-308 33 V
+1444 433 V
+2010 4344 L
+5736 1679 L
+-499 799 V
+5094 2212 L
+357 1332 V
+392 -266 V
+2177 2745 L
+4845 4144 L
+3123 1479 L
+2256 466 V
+2900 3544 L
+5058 2478 L
+2511 3611 L
+3290 1745 L
+167 267 V
+2177 1945 L
+4094 458 V
+1796 1629 L
+326 649 V
+1668 267 V
+-500 999 V
+2455 3011 L
+390 800 V
+5522 3611 L
+1796 1695 L
+1661 250 V
+2288 4078 L
+3234 2278 L
+1868 2612 L
+5665 4544 L
+5165 4144 L
+3790 3078 L
+4916 4344 L
+2233 2745 L
+4310 4544 L
+3012 3078 L
+4880 1945 L
+392 333 V
+6342 1537 L
+3123 3811 L
+4952 3544 L
+891 -199 V
+3902 2012 L
+-1335 0 V
+3205 266 V
+5130 3878 L
+5344 2278 L
+285 2066 V
+4952 4144 L
+-2719 0 V
+1796 3978 L
+326 -434 V
+-219 300 V
+2733 1745 L
+3902 3345 L
+5272 2212 L
+-1593 66 V
+556 800 V
+2652 4461 L
+89 16 V
+1921 4311 L
+5344 3611 L
+3568 3345 L
+723 799 V
+5807 1479 L
+1671 4402 L
+3957 2545 L
+2956 2811 L
+4845 1679 L
+784 599 V
+4809 3878 L
+3790 4078 L
+1796 4011 L
+5130 2012 L
+2122 2212 L
+2225 333 V
+3623 4078 L
+1796 1779 L
+3735 3544 L
+1466 800 V
+2171 4544 L
+3790 3544 L
+2622 1745 L
+2686 267 V
+3012 1679 L
+4235 3811 L
+2567 2212 L
+945 866 V
+2733 1479 L
+5843 3811 L
+3568 4344 L
+2177 2478 L
+3559 867 V
+3957 3878 L
+5308 2278 L
+3597 4544 L
+2177 3078 L
+56 -800 V
+6342 4402 L
+2177 1479 L
+6342 3469 L
+2456 1362 L
+667 1449 V
+945 -866 V
+741 800 V
+2122 1412 L
+2758 600 V
+4347 1745 L
+3290 4078 L
+5130 2811 L
+-143 733 V
+357 -466 V
+3957 4078 L
+5308 3078 L
+2010 1479 L
+3735 3278 L
+278 800 V
+3512 2545 L
+1903 -67 V
+2789 3078 L
+-723 733 V
+-270 67 V
+4235 2278 L
+-55 -799 V
+1671 2537 L
+5023 4144 L
+-1233 0 V
+2455 2212 L
+2532 866 V
+3290 3278 L
+3957 1679 L
+223 1332 V
+2733 1945 L
+5558 4411 L
+6199 1537 L
+5700 3611 L
+5094 1412 L
+571 2199 V
+3512 1745 L
+2900 4411 L
+3902 4144 L
+4013 2545 L
+-946 200 V
+-111 600 V
+5415 2212 L
+2177 3278 L
+422 1183 V
+2317 -50 V
+2900 3011 L
+1002 600 V
+2567 4078 L
+2117 1545 L
+5522 4078 L
+3234 3544 L
+890 -733 V
+1796 1729 L
+5201 1412 L
+357 1066 V
+214 -466 V
+2288 1745 L
+5558 3878 L
+6698 2636 L
+5629 1745 L
+4068 3345 L
+1490 199 V
+2288 3011 L
+4347 4344 L
+6698 2570 L
+5237 3011 L
+2288 2811 L
+5451 4344 L
+5700 2545 L
+-891 733 V
+5023 1479 L
+6271 4536 L
+5415 4411 L
+1903 1662 L
+5665 1412 L
+4880 4078 L
+5629 3011 L
+1796 1662 L
+2161 350 V
+1101 266 V
+-142 267 V
+214 733 V
+2344 1412 L
+5772 3544 L
+-4172 -8 V
+5736 3011 L
+2288 2278 L
+5344 1412 L
+4987 2545 L
+2789 2278 L
+-12 2266 V
+6734 2537 L
+5379 4411 L
+107 -67 V
+2177 2278 L
+0 -599 V
+3345 66 V
+3735 1945 L
+5308 3011 L
+2177 4411 L
+2511 2478 L
+-643 284 V
+2367 249 V
+3345 4078 L
+2900 2745 L
+167 1599 V
+3012 1745 L
+5023 2811 L
+2122 2478 L
+5344 1945 L
+3512 3611 L
+3401 2012 L
+-389 -67 V
+-930 467 V
+1796 2112 L
+437 1166 V
+3432 866 V
+2900 2278 L
+287 2266 V
+2117 1812 L
+616 1533 V
+2575 0 V
+2082 1812 L
+4117 725 V
+535 66 V
+4809 3345 L
+784 1199 V
+3957 1945 L
+5629 4544 L
+-2977 17 V
+2010 2278 L
+5700 1745 L
+3846 3078 L
+1903 1695 L
+5415 3611 L
+5772 2212 L
+2845 4411 L
+-371 50 V
+3012 1412 L
+-895 467 V
+-249 949 V
+3333 -83 V
+2733 3611 L
+2539 200 V
+4180 2545 L
+2400 1745 L
+2445 200 V
+1975 1362 L
+5593 3278 L
+2400 2278 L
+5379 3878 L
+5558 1412 L
+1600 3469 L
+522 -391 V
+405 1383 V
+2233 3878 L
+3902 2745 L
+3793 4544 L
+4880 1479 L
+-35 2932 V
+5843 1412 L
+1885 4311 L
+125 100 V
+2455 3345 L
+-111 0 V
+5023 2012 L
+178 2066 V
+-1578 66 V
+5593 2012 L
+2010 2745 L
+3957 3811 L
+5272 1679 L
+571 1132 V
+-3110 0 V
+112 800 V
+2678 3011 L
+-278 0 V
+4952 1945 L
+249 1133 V
+3044 1362 L
+802 1449 V
+5308 2545 L
+3067 3278 L
+2122 1479 L
+556 533 V
+111 -533 V
+6342 4536 L
+4880 3811 L
+856 533 V
+3067 2212 L
+-55 66 V
+445 1866 V
+556 -533 V
+2122 2545 L
+3293 800 V
+2567 2811 L
+556 267 V
+5665 1945 L
+3457 1412 L
+5486 2478 L
+2990 4544 L
+1796 1929 L
+5558 1745 L
+2344 4344 L
+4068 2478 L
+1850 1445 L
+883 1633 V
+5308 1479 L
+499 -67 V
+3902 3811 L
+2567 1479 L
+3735 3878 L
+2845 1679 L
+278 2199 V
+3790 2278 L
+112 533 V
+5558 2012 L
+-36 2532 V
+1796 3611 L
+2032 933 V
+2233 4411 L
+3679 2212 L
+1796 3445 L
+1438 366 V
+2233 3345 L
+3075 466 V
+3846 2212 L
+5130 1412 L
+1903 3878 L
+719 -600 V
+3623 4411 L
+5272 1745 L
+571 2399 V
+-3165 0 V
+2511 3011 L
+979 1533 V
+2622 3611 L
+4347 3278 L
+5665 3078 L
+4916 4078 L
+3457 3078 L
+5237 4411 L
+3178 1479 L
+835 200 V
+2678 3611 L
+5201 2545 L
+535 -600 V
+-3940 50 V
+3457 3878 L
+723 266 V
+5165 1945 L
+-1653 0 V
+3123 1679 L
+5058 4411 L
+5486 2212 L
+3067 3345 L
+5522 2278 L
+4235 2478 L
+1903 3544 L
+4952 1745 L
+1903 3978 L
+1796 2062 L
+882 -650 V
+5807 2745 L
+4068 3544 L
+5451 1679 L
+-2384 66 V
+2845 3544 L
+1796 3911 L
+5379 3278 L
+-1533 67 V
+-389 199 V
+2900 1412 L
+5308 4411 L
+2848 4544 L
+5415 1745 L
+4845 1479 L
+3290 3878 L
+3679 2811 L
+2678 2545 L
+5058 1479 L
+4180 3278 L
+2066 4144 L
+5344 1679 L
+-1999 66 V
+1749 800 V
+2956 1479 L
+2174 999 V
+4180 3878 L
+3735 2212 L
+2224 1579 L
+899 2565 V
+5629 1412 L
+178 1599 V
+3957 3345 L
+2117 3211 L
+2870 867 V
+3401 3011 L
+1479 67 V
+963 -333 V
+5272 1945 L
+179 -533 V
+3679 3611 L
+1879 933 V
+4880 1745 L
+1796 2795 L
+6698 2603 L
+2010 3011 L
+2385 1379 L
+-482 250 V
+3369 383 V
+4180 1945 L
+-56 1133 V
+2956 1945 L
+2566 600 V
+5237 1679 L
+2845 3345 L
+3178 1412 L
+445 2132 V
+1792 267 V
+1903 3511 L
+3869 633 V
+5308 3611 L
+3345 1479 L
+2213 466 V
+2288 3811 L
+4068 2212 L
+777 0 V
+0 1399 V
+3790 3278 L
+3151 4544 L
+139 -200 V
+5772 2478 L
+2789 3878 L
+612 -600 V
+2344 4411 L
+1324 133 V
+4845 3078 L
+-832 -67 V
+2186 392 V
+-713 741 V
+2789 4411 L
+5272 4078 L
+3457 2545 L
+556 -67 V
+3123 4078 L
+4124 2012 L
+792 1866 V
+2288 4344 L
+1868 2728 L
+3234 2478 L
+111 1933 V
+334 -67 V
+3345 3345 L
+2288 2478 L
+4180 4344 L
+55 -2332 V
+823 1066 V
+3902 1479 L
+1192 200 V
+2567 3078 L
+2900 1745 L
+5451 2811 L
+-499 0 V
+3401 2478 L
+5451 2212 L
+-72 1399 V
+3846 4411 L
+3790 1412 L
+2455 4411 L
+3512 3811 L
+-890 267 V
+6698 2470 L
+4291 3078 L
+4124 1745 L
+-167 0 V
+-334 467 V
+5558 3278 L
+4013 2745 L
+1687 799 V
+5094 4544 L
+4124 3544 L
+1327 334 V
+3902 4078 L
+2678 3544 L
+3129 600 V
+3457 3345 L
+1601 533 V
+72 -533 V
+2233 1745 L
+556 0 V
+2177 1412 L
+-274 450 V
+3049 350 V
+3457 3811 L
+5272 2745 L
+179 1066 V
+4347 2212 L
+2956 3078 L
+1335 466 V
+1814 4177 L
+1743 2470 L
+935 1941 V
+4180 2012 L
+629 1532 V
+71 -1066 V
+2599 4561 L
+5094 4411 L
+5486 2745 L
+1903 1962 L
+5379 3811 L
+2511 3278 L
+4809 3011 L
+463 67 V
+3735 3011 L
+2233 1679 L
+-437 -84 V
+3178 3345 L
+1832 2861 L
+5593 1679 L
+1814 4211 L
+3846 1945 L
+2789 4144 L
+4291 3878 L
+4180 1412 L
+843 2932 V
+214 -733 V
+3097 1362 L
+4235 3544 L
+-556 600 V
+2344 3611 L
+56 467 V
+1903 3944 L
+1498 200 V
+5593 3811 L
+5558 1479 L
+0 1066 V
+214 1533 V
+2567 1945 L
+3133 800 V
+3178 2212 L
+4291 1679 L
+4096 4544 L
+4013 1479 L
+1743 3403 L
+5237 1479 L
+2511 1745 L
+4845 3278 L
+3290 1679 L
+2064 4511 L
+447 -167 V
+3178 2811 L
+1002 534 V
+2883 4544 L
+1743 3536 L
+3234 3078 L
+5843 1945 L
+2900 2212 L
+612 -800 V
+5058 4344 L
+3234 1679 L
+834 -200 V
+2206 4511 L
+2733 3278 L
+5344 2478 L
+1796 4061 L
+5308 1679 L
+2678 1945 L
+111 0 V
+968 2599 V
+1796 1562 L
+4013 1412 L
+111 1066 V
+1850 1479 L
+4235 4411 L
+2455 4144 L
+-333 267 V
+5058 4144 L
+5486 2278 L
+3178 3011 L
+2956 1412 L
+2455 2478 L
+5807 3544 L
+5665 2212 L
+5165 1412 L
+500 2999 V
+3067 3811 L
+4845 2811 L
+3345 3544 L
+-500 600 V
+1964 200 V
+3525 4544 L
+5201 3544 L
+357 -533 V
+5023 1745 L
+6199 4469 L
+-4064 42 V
+5807 3811 L
+5272 1479 L
+2344 2278 L
+2572 0 V
+0 -799 V
+3067 4144 L
+2344 2212 L
+3249 66 V
+4845 4344 L
+2344 1945 L
+3512 3878 L
+5130 2745 L
+2622 3011 L
+4880 4144 L
+3123 3278 L
+2845 2745 L
+1832 3395 L
+3067 3078 L
+5379 4078 L
+2082 2612 L
+4013 1945 L
+3345 3878 L
+5700 1679 L
+2678 1479 L
+2701 999 V
+2288 3878 L
+-456 183 V
+4987 1479 L
+464 1532 V
+4180 4078 L
+2567 4344 L
+166 -200 V
+2678 3078 L
+5023 4411 L
+-856 133 V
+5023 2545 L
+2122 2745 L
+3685 66 V
+3345 1679 L
+929 2865 V
+1796 1829 L
+5629 3345 L
+4124 1412 L
+2900 1945 L
+167 533 V
+0 533 V
+4916 2212 L
+6021 2012 L
+3790 4344 L
+5165 2545 L
+3902 2212 L
+2082 1879 L
+2265 866 V
+640 -800 V
+2233 1479 L
+116 3065 V
+6271 4402 L
+5058 3011 L
+1868 2662 L
+3583 416 V
+2288 3611 L
+-545 791 V
+2563 1362 L
+615 2982 V
+1903 1729 L
+5344 2811 L
+0 200 V
+2400 4411 L
+5415 4144 L
+-71 -600 V
+-2277 0 V
+6199 1470 L
+5451 4411 L
+214 -533 V
+-500 0 V
+3012 3278 L
+389 333 V
+2344 2545 L
+3214 266 V
+4068 4144 L
+2733 3811 L
+4124 1945 L
+223 -466 V
+2956 2545 L
+5772 3611 L
+-571 200 V
+606 -733 V
+5379 4544 L
+4068 4411 L
+2010 4144 L
+3797 267 V
+6342 2470 L
+2288 1412 L
+5272 3345 L
+6342 1404 L
+3080 4544 L
+3623 1679 L
+2455 3611 L
+390 467 V
+2122 2012 L
+3150 999 V
+4345 4544 L
+2845 2212 L
+5807 3278 L
+2066 2012 L
+2886 999 V
+463 -466 V
+178 -600 V
+3401 3544 L
+5843 2278 L
+1743 1470 L
+601 275 V
+2003 733 V
+3123 3611 L
+834 -67 V
+2956 4078 L
+2511 2212 L
+111 1332 V
+2511 2745 L
+723 -200 V
+3957 1479 L
+2845 3878 L
+2066 3011 L
+3204 1362 L
+-471 850 V
+1391 333 V
+1796 3678 L
+3441 133 V
+535 0 V
+1796 3778 L
+3902 1945 L
+5486 3611 L
+-428 -67 V
+3178 2012 L
+5522 3811 L
+3234 4078 L
+1850 1662 L
+3568 1412 L
+5593 2545 L
+2288 1945 L
+779 -533 V
+5023 3611 L
+2567 3811 L
+5379 1479 L
+4845 3345 L
+3790 2745 L
+56 1333 V
+2420 4544 L
+3401 2278 L
+2278 4544 L
+2900 3278 L
+-890 266 V
+4952 3278 L
+534 600 V
+3957 2745 L
+-389 533 V
+5558 2278 L
+249 1600 V
+5700 3011 L
+3735 4344 L
+556 -999 V
+910 -534 V
+4291 1945 L
+2567 1412 L
+723 1666 V
+2288 3345 L
+2877 199 V
+4291 2811 L
+2117 2678 L
+2906 667 V
+3902 3011 L
+2010 3811 L
+2789 2212 L
+5843 3611 L
+1671 2403 L
+395 142 V
+2058 200 V
+-1446 66 V
+3623 1745 L
+5023 2745 L
+2400 2212 L
+556 1399 V
+946 733 V
+5344 4078 L
+4987 3611 L
+5201 2478 L
+250 0 V
+285 1600 V
+5451 1479 L
+3234 3345 L
+2177 4078 L
+5415 3278 L
+-285 333 V
+2010 1945 L
+1725 800 V
+3290 1412 L
+278 2399 V
+1277 0 V
+855 -733 V
+3735 2478 L
+1903 4061 L
+5415 3878 L
+5058 3278 L
+4180 2278 L
+-56 -799 V
+2082 2878 L
+818 200 V
+5130 1679 L
+2177 3611 L
+5486 3011 L
+3568 1945 L
+5344 3811 L
+142 -466 V
+4916 1745 L
+3679 3011 L
+328 1533 V
+1600 3403 L
+482 -192 V
+2834 333 V
+142 -799 V
+4068 1679 L
+5094 3878 L
+2122 1679 L
+5843 3078 L
+3623 3811 L
+3846 2545 L
+5451 4544 L
+-1819 0 V
+3067 2811 L
+1796 1495 L
+2106 -83 V
+2066 2278 L
+2169 533 V
+1814 4311 L
+5308 3544 L
+3735 1412 L
+2072 533 V
+4347 3078 L
+2288 1679 L
+5772 3345 L
+-393 199 V
+4845 2745 L
+2789 3278 L
+779 800 V
+500 0 V
+6199 2403 L
+3735 3345 L
+-835 0 V
+4291 3011 L
+2344 1679 L
+5451 2745 L
+2233 4078 L
+55 -2066 V
+5772 1479 L
+4291 2212 L
+5522 3878 L
+4013 3345 L
+2026 449 V
+3234 1745 L
+278 1066 V
+56 -333 V
+1384 67 V
+0 533 V
+2567 2745 L
+834 66 V
+2344 2478 L
+2117 4211 L
+2678 2278 L
+1796 1862 L
+214 1216 V
+3679 2012 L
+556 1866 V
+5237 3544 L
+35 334 V
+-3155 66 V
+3512 2212 L
+3186 325 V
+5629 3544 L
+4291 1479 L
+3957 3078 L
+3012 4344 L
+4180 2478 L
+2900 4344 L
+1796 1895 L
+4938 575 V
+3679 3078 L
+2511 1679 L
+278 1666 V
+668 999 V
+2956 3011 L
+5665 4344 L
+4952 1479 L
+3846 1745 L
+6057 1529 L
+3345 3811 L
+5807 2278 L
+5201 4411 L
+3679 1479 L
+2400 2745 L
+55 533 V
+5023 2278 L
+677 1000 V
+5058 2212 L
+2474 4561 L
+2656 -17 V
+3234 4344 L
+3679 2745 L
+702 1799 V
+1796 3544 L
+826 867 V
+5736 3611 L
+2122 3011 L
+6199 4536 L
+2177 2212 L
+11 -850 V
+4880 2545 L
+749 -866 V
+2385 4544 L
+3623 3878 L
+0 -600 V
+5130 1745 L
+4845 1412 L
+927 1599 V
+5165 1745 L
+4952 2745 L
+427 -533 V
+4916 2012 L
+3623 2745 L
+5344 1479 L
+5023 4078 L
+4291 2745 L
+2956 2012 L
+4987 3878 L
+5094 2012 L
+2622 4344 L
+-55 -733 V
+5094 1745 L
+1796 3728 L
+5593 1412 L
+3044 4544 L
+5593 3078 L
+143 466 V
+2511 1412 L
+2405 0 V
+499 67 V
+3902 1679 L
+2066 1412 L
+834 2399 V
+2408 67 V
+4809 2012 L
+2066 3878 L
+5237 3078 L
+3735 4078 L
+5237 1745 L
+4952 3811 L
+3290 2811 L
+2455 2012 L
+4291 1412 L
+56 1599 V
+5522 2478 L
+-36 1600 V
+4124 3345 L
+2233 3811 L
+2678 2478 L
+1112 0 V
+334 -200 V
+2400 4144 L
+5379 1412 L
+696 383 V
+4124 4144 L
+3017 4552 L
+5237 1412 L
+2733 1679 L
+445 1599 V
+2117 2078 L
+3123 1412 L
+3012 2478 L
+1975 267 V
+535 -800 V
+4845 1745 L
+-36 2399 V
+107 -799 V
+3345 2478 L
+2010 3278 L
+1836 0 V
+2233 4344 L
+3568 1745 L
+5344 4344 L
+-1776 67 V
+667 -67 V
+-674 200 V
+452 -200 V
+1796 3345 L
+604 -867 V
+3942 925 V
+5629 3278 L
+107 -733 V
+4347 3878 L
+569 -800 V
+321 1266 V
+3512 1479 L
+835 2332 V
+2789 2811 L
+5736 2012 L
+4291 4344 L
+2455 1479 L
+-55 2865 V
+4347 1412 L
+925 3132 V
+5665 2478 L
+2122 1945 L
+445 1933 V
+3623 1945 L
+2789 4344 L
+2177 2545 L
+3735 2012 L
+556 0 V
+518 -333 V
+2777 1362 L
+-99 2982 V
+2288 2545 L
+724 466 V
+945 1133 V
+3623 3011 L
+2082 1612 L
+429 1466 V
+2726 800 V
+2010 3611 L
+5700 1945 L
+3067 4411 L
+2122 1745 L
+5700 4144 L
+-535 200 V
+3290 2012 L
+2171 3461 L
+6 883 V
+723 -466 V
+2066 1479 L
+4880 3345 L
+3067 4078 L
+3345 1412 L
+2141 600 V
+357 -533 V
+1903 1829 L
+3902 4411 L
+3568 3544 L
+2789 2012 L
+5130 4144 L
+142 200 V
+5772 1679 L
+4068 3878 L
+2117 2878 L
+1903 1595 L
+1275 950 V
+2845 4344 L
+5165 2478 L
+2206 4544 L
+3401 1945 L
+2406 600 V
+3568 3611 L
+3512 2278 L
+3123 4344 L
+389 -200 V
+5201 3878 L
+4013 3544 L
+55 -1266 V
+2122 3345 L
+4916 2745 L
+2122 4344 L
+4809 1745 L
+1034 -66 V
+1600 4402 L
+2455 2545 L
+3864 4544 L
+316 -933 V
+3067 2012 L
+5772 3878 L
+2567 2478 L
+5593 4344 L
+3679 1745 L
+3178 4144 L
+3021 258 V
+3846 3011 L
+3401 4411 L
+1903 1529 L
+5736 1412 L
+-1890 0 V
+2233 2012 L
+3218 0 V
+4068 1745 L
+5237 4078 L
+-1947 66 V
+556 -533 V
+1284 467 V
+2678 3811 L
+5522 2212 L
+2400 3611 L
+2765 800 V
+2733 1412 L
+5558 4144 L
+2733 4078 L
+5843 3544 L
+-642 67 V
+-2412 0 V
+556 -800 V
+2462 534 V
+4809 2212 L
+0 1866 V
+3123 2478 L
+1743 1537 L
+2812 4544 L
+-71 0 V
+2567 2545 L
+166 -67 V
+668 1600 V
+1796 3644 L
+2328 434 V
+1600 2403 L
+3623 4344 L
+2567 2278 L
+0 -599 V
+2233 3611 L
+2789 1679 L
+389 0 V
+-278 799 V
+2344 3811 L
+5700 2012 L
+5023 1679 L
+249 866 V
+2900 4078 L
+2010 3878 L
+2003 266 V
+5665 1745 L
+3290 1945 L
+3444 691 V
+5522 1412 L
+2099 4511 L
+5772 1412 L
+4180 4411 L
+-209 133 V
+2622 2745 L
+5023 3878 L
+2956 4144 L
+2117 3678 L
+2567 1745 L
+2288 1479 L
+6199 3469 L
+-4296 9 V
+3679 3278 L
+56 -1799 V
+1930 799 V
+5201 2012 L
+499 1866 V
+2845 2545 L
+3234 1412 L
+779 2466 V
+3123 1945 L
+5094 3011 L
+2233 2545 L
+3253 0 V
+214 266 V
+5593 4411 L
+5201 3011 L
+3345 2212 L
+5130 4344 L
+2511 2545 L
+2990 1379 L
+578 100 V
+5558 2745 L
+2233 2478 L
+1224 800 V
+2010 1412 L
+5522 3078 L
+2066 1745 L
+5094 2745 L
+-1471 66 V
+1257 800 V
+2349 1362 L
+5629 3878 L
+-3547 66 V
+5237 1945 L
+-392 67 V
+1903 1562 L
+5237 3278 L
+2511 3878 L
+3902 3278 L
+-112 533 V
+2344 1479 L
+5130 4411 L
+2066 2811 L
+3599 733 V
+2344 2012 L
+3428 -67 V
+2733 3011 L
+2242 4544 L
+3568 1679 L
+2117 3145 L
+5772 4344 L
+71 -1866 V
+-2331 0 V
+3178 3811 L
+3067 1479 L
+2027 999 V
+2135 4544 L
+5700 2278 L
+2400 2012 L
+834 -67 V
+1868 2795 L
+3512 1679 L
+2117 2145 L
+1228 600 V
+1832 3728 L
+3726 350 V
+3846 3878 L
+1177 -67 V
+2028 4511 L
+5807 2212 L
+2789 3544 L
+278 67 V
+2455 -67 V
+3790 3345 L
+3178 2745 L
+5415 1945 L
+-71 1933 V
+5094 1479 L
+3401 3878 L
+1832 3328 L
+3178 1945 L
+2622 1679 L
+2365 599 V
+3568 3011 L
+5522 2012 L
+107 799 V
+-250 -66 V
+2082 4211 L
+4347 3544 L
+2455 1945 L
+4203 4544 L
+88 -1266 V
+1017 800 V
+4347 2811 L
+-112 534 V
+2122 2811 L
+5130 2212 L
+-250 66 V
+1743 2537 L
+1600 4469 L
+3568 2212 L
+2678 1679 L
+2082 3411 L
+3476 -66 V
+3345 2012 L
+557 266 V
+5058 1945 L
+3457 4078 L
+1903 3644 L
+3957 3278 L
+5415 3078 L
+321 800 V
+2066 4078 L
+3679 3345 L
+2622 1945 L
+2543 267 V
+-320 799 V
+2177 3811 L
+3790 1945 L
+2511 3811 L
+1903 3578 L
+552 -767 V
+167 534 V
+946 -534 V
+4987 4144 L
+5165 3078 L
+4068 3011 L
+3735 1745 L
+5201 4544 L
+5807 2012 L
+2789 3811 L
+56 -1866 V
+5486 4411 L
+-1473 0 V
+-334 0 V
+4987 2811 L
+5308 1745 L
+321 2333 V
+-2061 66 V
+1740 0 V
+-356 -66 V
+677 66 V
+3401 2545 L
+1903 4194 L
+1868 2695 L
+3290 3811 L
+5593 2478 L
+214 1133 V
+5736 2478 L
+463 1058 V
+2678 4078 L
+3457 2278 L
+5272 4411 L
+1814 2828 L
+3345 2278 L
+-111 467 V
+1743 4469 L
+4029 -58 V
+4238 4544 L
+2010 2012 L
+-107 -17 V
+-89 2349 V
+4347 2012 L
+1796 3478 L
+4347 1679 L
+1903 4011 L
+1832 400 V
+3012 3611 L
+2831 733 V
+-428 0 V
+285 67 V
+36 -2199 V
+-357 66 V
+3123 2545 L
+5700 1412 L
+2845 2012 L
+5201 4144 L
+3457 1679 L
+-779 533 V
+5665 3345 L
+2956 2478 L
+-111 0 V
+5308 4344 L
+-356 67 V
+2344 3278 L
+3679 2545 L
+5379 4144 L
+-285 -66 V
+2567 3278 L
+49 -1916 V
+5665 2545 L
+3790 2012 L
+2082 1545 L
+5772 2745 L
+-2037 66 V
+1600 1470 L
+2468 -58 V
+-945 800 V
+334 533 V
+1994 600 V
+3957 1412 L
+111 600 V
+5130 3811 L
+2066 2478 L
+3313 600 V
+-178 200 V
+4291 4411 L
+5593 1479 L
+2789 2545 L
+890 999 V
+5415 3011 L
+428 -466 V
+2171 4511 L
+-250 -50 V
+5344 2545 L
+5700 1479 L
+-748 533 V
+2956 4411 L
+5593 2212 L
+3067 2545 L
+556 -267 V
+445 267 V
+1597 266 V
+4417 4561 L
+5522 4411 L
+285 -67 V
+2233 3011 L
+1939 4244 L
+3735 1679 L
+2177 3345 L
+5807 2478 L
+-71 600 V
+2956 2212 L
+2673 866 V
+1903 2062 L
+5094 3544 L
+2956 3878 L
+0 -600 V
+-111 0 V
+-390 800 V
+5486 3544 L
+5130 2545 L
+3012 4144 L
+-390 0 V
+4180 3811 L
+914 533 V
+5451 2545 L
+2288 4144 L
+1057 0 V
+5130 3544 L
+1671 3403 L
+2956 1745 L
+723 200 V
+5094 3345 L
+2455 3078 L
+2817 533 V
+357 800 V
+2177 3544 L
+4094 -8 V
+6734 2503 L
+1671 1537 L
+1174 741 V
+5522 3278 L
+3568 3078 L
+-334 200 V
+4291 2278 L
+3178 2478 L
+279 333 V
+55 534 V
+-167 266 V
+4952 1412 L
+2082 3678 L
+429 733 V
+-223 0 V
+724 -533 V
+2046 666 V
+72 -1466 V
+4916 1945 L
+3290 2745 L
+-167 600 V
+2122 3611 L
+4845 2545 L
+748 1333 V
+6698 2503 L
+2010 2811 L
+4845 4078 L
+3846 1679 L
+1605 66 V
+3846 4344 L
+5201 3345 L
+3234 2811 L
+1743 4536 L
+71 -392 V
+2233 1412 L
+2825 0 V
+143 267 V
+214 2865 V
+4180 1679 L
+2622 3811 L
+4952 3345 L
+677 266 V
+2956 2278 L
+1001 200 V
+2511 1479 L
+4809 2545 L
+2511 2811 L
+501 534 V
+1335 799 V
+-946 200 V
+3623 2478 L
+1649 0 V
+1885 4411 L
+5593 3611 L
+4013 2212 L
+278 1399 V
+-890 200 V
+1444 67 V
+-888 466 V
+4180 2811 L
+1556 467 V
+3735 3611 L
+2066 4344 L
+5665 4078 L
+5308 2212 L
+2455 2745 L
+2400 1679 L
+483 -317 V
+4809 2478 L
+606 1066 V
+5629 2012 L
+2066 4411 L
+1903 1495 L
+3762 517 V
+4124 3011 L
+5237 2811 L
+4068 3278 L
+2122 4144 L
+1296 400 V
+5237 2745 L
+2567 3544 L
+5593 3011 L
+2177 1745 L
+3234 1479 L
+1001 0 V
+2082 2145 L
+1208 866 V
+2789 1412 L
+3846 4144 L
+1747 -66 V
+2400 2811 L
+-283 600 V
+5130 1945 L
+214 67 V
+-321 -67 V
+4235 1412 L
+2066 3278 L
+3670 866 V
+3123 4411 L
+2733 3544 L
+-556 334 V
+5058 2811 L
+0 -1066 V
+1743 2403 L
+990 142 V
+5165 1679 L
+214 1666 V
+4235 3611 L
+2010 1679 L
+4124 4344 L
+5201 1479 L
+285 466 V
+4987 1679 L
+4809 3078 L
+2400 3544 L
+5379 1679 L
+1903 3678 L
+3568 2012 L
+2900 4144 L
+5308 2478 L
+-36 1666 V
+3623 2012 L
+2455 1679 L
+5772 2811 L
+4845 2278 L
+71 733 V
+249 1533 V
+-71 -733 V
+3623 1412 L
+5237 4144 L
+-72 -66 V
+5130 1479 L
+4068 3611 L
+1903 4244 L
+5700 3345 L
+3957 2212 L
+2117 2612 L
+2799 199 V
+606 534 V
+5023 2212 L
+2344 2745 L
+4987 4344 L
+5272 2811 L
+36 -1399 V
+285 1399 V
+5451 1945 L
+3178 3611 L
+1702 -67 V
+3790 1679 L
+-556 333 V
+167 200 V
+1671 4536 L
+1177 -59 V
+2678 2745 L
+3846 2278 L
+1903 3778 L
+5843 2012 L
+4916 3811 L
+321 733 V
+3290 2212 L
+55 333 V
+1785 466 V
+2400 1945 L
+1835 800 V
+1358 799 V
+2511 4144 L
+1600 1404 L
+5593 3345 L
+2900 1679 L
+2479 66 V
+4131 4544 L
+1796 3511 L
+517 1033 V
+2066 3345 L
+5486 1745 L
+-71 -333 V
+1832 3295 L
+2010 1745 L
+56 200 V
+5451 4144 L
+5058 2012 L
+3735 4144 L
+4880 3278 L
+357 -733 V
+-285 -67 V
+1600 1537 L
+4235 4078 L
+2511 2012 L
+6342 3536 L
+2567 4411 L
+945 -67 V
+5272 3278 L
+2733 4411 L
+501 -800 V
+2233 3544 L
+4068 3078 L
+-389 733 V
+2021 0 V
+4013 2012 L
+1600 4536 L
+5237 3345 L
+-250 -67 V
+107 -467 V
+2400 3078 L
+-318 67 V
+6271 1537 L
+5772 3278 L
+2567 4144 L
+1112 -66 V
+4880 2745 L
+2845 1479 L
+2071 200 V
+677 2465 V
+3401 1412 L
+2406 267 V
+-2406 0 V
+5379 2811 L
+2678 3878 L
+4124 2212 L
+3383 4544 L
+3623 3345 L
+-834 733 V
+2900 2545 L
+-556 533 V
+1335 800 V
+5165 3278 L
+2082 1362 L
+5094 3278 L
+5308 1945 L
+2622 1412 L
+-111 533 V
+3118 600 V
+-71 -866 V
+1832 2112 L
+1625 366 V
+1850 1629 L
+2385 116 V
+1394 467 V
+-2395 0 V
+2082 2945 L
+2265 400 V
+533 533 V
+3123 3011 L
+4347 1945 L
+3067 2278 L
+5700 4078 L
+2066 1679 L
+4880 2811 L
+3454 4544 L
+4987 2012 L
+2066 2745 L
+3900 4544 L
+2066 2212 L
+3777 0 V
+2242 1362 L
+4916 4144 L
+4809 1412 L
+2455 3811 L
+3957 3011 L
+5522 2745 L
+2177 4144 L
+501 -799 V
+334 199 V
+2733 2012 L
+223 1532 V
+5237 2012 L
+3401 1745 L
+5665 3278 L
+3790 1479 L
+2066 3611 L
+1743 1404 L
+5558 3611 L
+5665 1679 L
+35 799 V
+2733 2745 L
+5379 4344 L
+4068 3811 L
+-1724 67 V
+2177 2811 L
+2988 -66 V
+3123 1745 L
+5736 4411 L
+2900 1479 L
+1671 1404 L
+5058 3811 L
+3012 4078 L
+6342 1470 L
+3345 4344 L
+5201 2212 L
+606 -467 V
+2288 3544 L
+3457 2212 L
+2567 3345 L
+2598 0 V
+6271 1404 L
+4013 2278 L
+1903 3445 L
+163 -367 V
+3790 1745 L
+3457 3611 L
+5415 2278 L
+4235 1945 L
+5843 3878 L
+5023 2478 L
+-178 0 V
+1743 3469 L
+3623 2545 L
+5165 2012 L
+2344 3544 L
+5308 2745 L
+3178 3078 L
+4880 1412 L
+535 1399 V
+5772 1745 L
+3935 4544 L
+1600 2537 L
+196 1307 V
+1438 34 V
+389 -267 V
+1935 733 V
+3512 3278 L
+2331 800 V
+4809 2278 L
+2400 3878 L
+1796 1962 L
+604 583 V
+1903 1895 L
+1887 916 V
+0 -599 V
+167 1399 V
+1850 1379 L
+5023 3011 L
+1796 3578 L
+0 -1549 V
+1049 982 V
+5058 1679 L
+3568 2278 L
+4880 1679 L
+1868 2895 L
+1867 183 V
+5344 2745 L
+2400 3811 L
+111 267 V
+4952 1679 L
+3401 1479 L
+1939 4194 L
+3735 2278 L
+2233 2811 L
+5736 1745 L
+-2279 0 V
+4987 3011 L
+630 280 L
+4809 3611 L
+1850 1695 L
+494 2449 V
+4068 2811 L
+1668 0 V
+3735 2545 L
+2010 4078 L
+5451 2278 L
+4013 3278 L
+939 333 V
+-828 0 V
+3457 3011 L
+834 -466 V
+3234 4411 L
+3123 2745 L
+1757 266 V
+2122 3278 L
+222 -267 V
+5130 2278 L
+3735 3811 L
+2288 2212 L
+890 2199 V
+2900 2811 L
+1850 2462 L
+5486 1479 L
+4235 3278 L
+2900 3611 L
+5237 2278 L
+962 -874 V
+5522 2811 L
+677 -341 V
+5415 4078 L
+5165 2278 L
+2622 2545 L
+111 -267 V
+5522 4144 L
+5415 2745 L
+927 -208 V
+-713 -59 V
+5094 2278 L
+178 -866 V
+4809 4411 L
+-1797 0 V
+4013 2811 L
+1832 1779 L
+1458 766 V
+3846 1479 L
+3401 3078 L
+5665 2745 L
+4235 4144 L
+-445 267 V
+5415 2012 L
+2455 1745 L
+3816 792 V
+4042 4544 L
+5629 1479 L
+2400 3278 L
+5058 2545 L
+3234 4144 L
+1903 3611 L
+5023 3278 L
+3902 3078 L
+1903 3911 L
+2622 2212 L
+4987 1412 L
+2288 2745 L
+1113 600 V
+2937 1362 L
+4347 3611 L
+5593 1745 L
+1868 2512 L
+2956 3811 L
+2851 267 V
+5415 1679 L
+2082 2678 L
+5486 4544 L
+5023 3078 L
+5201 1945 L
+2400 1479 L
+4952 4344 L
+3294 4544 L
+608 -666 V
+1903 2029 L
+3298 249 V
+464 1533 V
+5272 3544 L
+2723 1362 L
+1992 4511 L
+4235 2212 L
+2117 2345 L
+3227 933 V
+35 -1266 V
+963 391 V
+4809 1479 L
+677 1799 V
+5094 1945 L
+2233 2212 L
+5451 4078 L
+285 -267 V
+2117 2412 L
+505 -933 V
+5165 3011 L
+1868 2861 L
+142 484 V
+223 -267 V
+389 800 V
+2082 2345 L
+318 1000 V
+519 1199 V
+3568 2745 L
+2489 849 V
+2845 3078 L
+2249 0 V
+3178 1745 L
+1631 200 V
+4124 1679 L
+685 2132 V
+2455 2278 L
+5344 1745 L
+142 -333 V
+3846 2012 L
+3512 4411 L
+2455 1412 L
+5629 2745 L
+2344 4078 L
+3846 2745 L
+-501 533 V
+-16 1266 V
+4809 2811 L
+713 1533 V
+3012 2012 L
+2581 733 V
+5237 2212 L
+2177 3011 L
+3846 2478 L
+2956 1679 L
+5165 3811 L
+3345 3011 L
+1903 4161 L
+3123 2278 L
+-501 800 V
+4235 1679 L
+4013 3078 L
+6342 4469 L
+4916 2478 L
+2455 3544 L
+4180 2745 L
+878 1333 V
+5665 1479 L
+5486 2811 L
+3790 3611 L
+2177 2012 L
+-60 933 V
+2941 400 V
+4068 2745 L
+-556 799 V
+779 534 V
+2789 2478 L
+3054 533 V
+4235 2545 L
+5629 1945 L
+-749 267 V
+-978 333 V
+5843 1745 L
+-321 -66 V
+2117 1612 L
+5165 3611 L
+3457 4411 L
+5772 3078 L
+4952 2278 L
+4042 1379 L
+-752 100 V
+667 2932 V
+-2036 0 V
+3512 2745 L
+0 1333 V
+4845 3544 L
+2122 3811 L
+3846 3544 L
+3957 2278 L
+0 533 V
+2845 1412 L
+1903 3811 L
+2622 2811 L
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4871 N
+630 280 L
+6317 0 V
+0 4591 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

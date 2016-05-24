@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>InstanceMD.hpp</itemPath>
+      <itemPath>LocalSearch.hpp</itemPath>
+      <itemPath>LocalSearchMD.hpp</itemPath>
+      <itemPath>Miscelanea.hpp</itemPath>
+      <itemPath>PopulationBased.hpp</itemPath>
+      <itemPath>PopulationBasedMD.hpp</itemPath>
+      <itemPath>Solucion.hpp</itemPath>
+      <itemPath>TrajectorySearch.hpp</itemPath>
+      <itemPath>TrajectorySearchMD.hpp</itemPath>
+      <itemPath>mainMD.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="InstanceMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LocalSearch.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LocalSearchMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Miscelanea.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PopulationBased.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PopulationBasedMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Solucion.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TrajectorySearch.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TrajectorySearchMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mainMD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="InstanceMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LocalSearch.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LocalSearchMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Miscelanea.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PopulationBased.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PopulationBasedMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Solucion.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TrajectorySearch.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TrajectorySearchMD.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mainMD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

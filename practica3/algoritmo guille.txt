@@ -1,0 +1,33 @@
+void EnfriamientoSimuladoKP(const int& valorOptimoKP)
+	{
+		unsigned int numIteraciones = 0, fallos = 0;
+		double T = TemperaturaInicial(valorOptimoKP);
+		Solucion sBest(GetInstance().getNodos()), s2(GetInstance().getNodos());
+		getValidSolution(s2, GetInstance().getMateriales());
+		
+		SetSol(s2);
+		sBest = s2;
+		
+		while(numIteraciones < 100000 && fallos < 100)
+		{
+			for(int i = 0; i < GetInstance().getNodos(); i++)
+			{
+				s2  = Neighoperator();
+				if(s2.GetCoste() > sBest.GetCoste())
+						sBest = s2;
+				
+				if(Aceptar(s2, GetSol(), T, valorOptimoKP))
+				{
+					SetSol(s2);
+					fallos = 0;
+				}
+				else
+					fallos = fallos + 1;
+				
+				T = Enfriar(T,i);
+			}
+			SetSol(sBest);
+			numIteraciones++;
+		}
+		return;
+	}

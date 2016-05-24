@@ -1,0 +1,21 @@
+Pruebas KP
+
+	Individuos: 90
+
+	Nº padres: 15
+
+	Contendientes: 10
+
+	Epocas: 1500
+
+Pruebas tsp
+
+	Individuos: 90
+
+	Nº padres: 10
+
+	Contendientes: 10
+
+	Epocas: 40000
+
+	Alelos:	4

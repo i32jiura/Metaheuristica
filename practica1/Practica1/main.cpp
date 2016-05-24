@@ -1,0 +1,177 @@
+/* 
+ * File:   main.cpp
+ * Author: jesus
+ *
+ * Created on 3 de marzo de 2016, 14:43
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include "InstanceTsp.hpp"
+#include "SolGenerator.hpp"
+#include "InstanceKP.hpp"
+#include "SolGeneratorKP.hpp"
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+double Fitness(double valorOptimo, double valorActual);
+
+int main(int argc, char** argv) {
+    
+	InstanceTSP tsp;
+	InstanceKP kp(0);
+	SolGenerator sgTsp;
+	SolGeneratorKP sgKP;
+	Solucion s,s2,optima,optima2;
+	string nombreF,nombreF2,nombreSalTSPIt,nombreSalTSPFit,nombreSalKPIt,nombreSalKPFit;
+	vector<string> nums {"0","1","2","3","4"};
+	double valorOptimo;
+	vector< vector<double> > costeTSP;
+	vector< vector<double> > fitnessTSP;
+	vector< vector<double> > costeKP;
+	vector< vector<double> > fitnessKP;
+	
+	cout<<"Introduce el nombre del fichero TSP (sin ruta): ";
+	cin>>nombreF;  
+	cout<<"Introduce el nombre del fichero KP (sin ruta): ";
+	cin>>nombreF2;  
+
+	nombreSalTSPIt = nombreF;
+	nombreSalKPIt = nombreF;
+	nombreSalKPIt = nombreF2;
+	nombreSalKPFit = nombreF2;
+	
+	ifstream fichTSP(("ficheros/"+nombreF).c_str());
+	ifstream fichKP(("ficheros/"+nombreF2).c_str());
+
+	if(!fichTSP.is_open() or !fichKP.is_open()){
+		cout<<"Error en la carga del archivo\n";
+		return EXIT_FAILURE;
+	}
+
+	// cargamos datos de los ficheros en los vectores
+	fichTSP >> tsp;
+	fichKP >> kp;
+
+	//redimensionar vectores
+	s.GetValores().resize(tsp.getPuntos().size());
+	optima.GetValores().resize(tsp.getPuntos().size());
+	costeTSP.resize(1000);
+	fitnessTSP.resize(1000);
+	
+	s2.GetValores().resize(kp.getMateriales().size());
+	optima2.GetValores().resize(kp.getMateriales().size());
+	costeKP.resize(1000);
+	fitnessKP.resize(1000);
+	
+	nombreSalTSPIt = "salidas/iteraciones_" + nombreF;
+	nombreSalTSPFit = "salidas/fitness_" + nombreF;
+	nombreSalKPIt = "salidas/iteraciones_" + nombreF2;
+	nombreSalKPFit = "salidas/fitness_" + nombreF2;
+  
+	ofstream fichSalTSP(nombreSalTSPIt.c_str());
+	ofstream fichSalTSP2(nombreSalTSPFit.c_str());
+	ofstream fichSalKP(nombreSalKPIt.c_str());
+	ofstream fichSalKP2(nombreSalKPFit.c_str());
+
+	for (int j=0;j<5;++j) {
+                
+		//nombreSalTSPIt = "salidas/" + nums[j] + "_Salida_" + nombreF;
+		//nombreSalKPIt = "salidas/" + nums[j] + "_Salida_" + nombreF2;
+        //        cout<<nombreSalTSPIt<<endl;
+        //        cout<<nombreSalKPIt<<endl;
+		//ofstream fichSalTSP(nombreSalTSPIt.c_str());
+		//ofstream fichSalKP(nombreSalKPIt.c_str());
+
+		//inicializacion tsp 
+		for(unsigned int i=0; i < tsp.getPuntos().size(); i++)
+			s.GetValores()[i] = i;
+             
+		sgTsp.calCost(s,tsp.getPuntos());
+		
+		valorOptimo = s.GetCoste();
+			
+        //inicializacion kp
+        for(unsigned int i=0; i < kp.getMateriales().size(); i++)
+            s2.GetValores()[i] = 0;
+
+		//barajamos vector
+		random_shuffle ( s.GetValores().begin(), s.GetValores().end() );
+
+		optima = s;
+        optima2.SetCoste(0);
+		sgTsp.calCost(optima,tsp.getPuntos());
+		
+		for(int i=0;i<1000;++i) {
+
+			if ( j == 0 ) {
+				//numero de nodo
+				costeTSP[i].push_back(i);
+				fitnessTSP[i].push_back(i);
+				//numero de material
+				costeKP[i].push_back(i);
+				fitnessKP[i].push_back(i);
+			}
+				
+			sgTsp.getValidSolution(s,tsp.getPuntos());
+			optima = tsp.Aptitud(optima,s);
+			//fichSalTSP << i << " " << optima.GetCoste() << " " << Fitness(valorOptimo,optima.GetCoste()) << endl;
+			costeTSP[i].push_back(optima.GetCoste());
+			fitnessTSP[i].push_back(Fitness(valorOptimo,optima.GetCoste()));
+			
+			sgKP.getValidSolution(s2,kp.getMateriales(),kp);
+			optima2 = kp.Aptitud(optima2,s2);
+			//fichSalKP << i << " " << optima2.GetCoste() << " " << Fitness(kp.getValorOptimo(),optima2.GetCoste()) << endl;
+			costeKP[i].push_back(optima2.GetCoste());
+			fitnessKP[i].push_back(Fitness(kp.getValorOptimo(),optima2.GetCoste()));
+			
+		}
+		
+		//fichSalTSP.close();
+		//fichSalKP.close();
+        //        nombreSalTSPIt.clear();
+        //        nombreSalKPIt.clear();
+
+	}
+	
+	//guardar en ficheros
+	for (int i=0;i<costeTSP.size();++i) {
+		
+		for (int j=0;j<costeTSP[0].size();++j)	
+			fichSalTSP << costeTSP[i][j] << " ";
+		
+		for (int k=0;k<fitnessTSP[0].size();++k)
+			fichSalTSP2 << fitnessTSP[i][k] << " ";
+		
+		fichSalTSP << endl;
+		fichSalTSP2 << endl;
+	}
+	
+	for (int i=0;i<costeKP.size();++i) {
+		
+		for (int j=0;j<costeKP[0].size();++j)	
+			fichSalKP << costeKP[i][j] << " ";
+		
+		for (int k=0;k<fitnessKP[0].size();++k)
+			fichSalKP2 << fitnessKP[i][k] << " ";
+		
+		fichSalKP << endl;
+		fichSalKP2 << endl;
+	}
+	
+	fichSalTSP.close();
+	fichSalTSP2.close();
+	fichSalKP.close();
+	fichSalKP2.close();
+	
+	return 0;
+}
+
+	double Fitness(double valorOptimo, double valorActual){
+		
+		return valorActual - valorOptimo;
+		
+	}

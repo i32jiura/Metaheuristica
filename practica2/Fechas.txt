@@ -1,0 +1,7 @@
+Practica 2:
+
+	Miercoles 23:
+		Clases terminadas y comienzo de diseño de pruebas.
+	Viernes 25:
+		implementacion de pruebas(Todos menos Dani, nos debes una invitación por tu cumple mamon). Concretar dia de reunión.
+			

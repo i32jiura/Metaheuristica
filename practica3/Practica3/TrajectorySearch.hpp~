@@ -1,0 +1,95 @@
+/* 
+ * File:   LocalSearch.hpp
+ * Author: jesus
+ *
+ * Created on 16 de marzo de 2016, 18:17
+ */
+
+#ifndef LOCALSEARCH_HPP
+#define	LOCALSEARCH_HPP
+
+#include "Solucion.hpp"
+#include <ctime>
+#include <vector>
+
+class TrajectorySearch{
+	private:
+		Solucion sol;
+		
+	public:
+		TrajectorySearch(){
+			srand(time(NULL));
+		}
+		
+		/*std::vector<int> Neighoperator(int kNeigh){
+			int tam=sol.GetValores().size(),inicio=rand()%tam;
+			
+			if(2*kNeigh>tam || kNeigh>tam)
+				return sol.GetValores();
+			
+			if(inicio+kNeigh>=tam)
+				inicio=inicio-((inicio+kNeigh)-tam);
+			if(inicio-kNeigh<0)
+				inicio=inicio+(kNeigh-inicio);
+			
+			std::vector<int> aux(sol.GetValores().begin()+(inicio-kNeigh),sol.GetValores().begin()+(inicio+kNeigh));
+			return aux;
+				
+		}*/
+		double Enfriar(const double &T,const int &it)
+		{
+			return T / (1+log10(1+it));
+		}
+		virtual Solucion Neighoperator() = 0;
+		
+		virtual void firstImprovement(int kNeigh)=0;
+		virtual void bestImprovement(int kNeigh)=0;
+
+                void SetSol(Solucion sol)
+                {
+                        this->sol = sol;
+                }
+
+                        Solucion& GetSol() {
+                                return sol;
+                        }
+
+                const Solucion& GetSol() const
+                {
+                        return sol;
+                }
+        protected:
+            //num: Porcion del vector a detruir(1/num); eliminados: vector con los valores sacados de sol,debe venir desde fuera sin inicializar. 
+            Solucion Destruir(const int &num,std::vector< int > &eliminados){
+                Solucion aux=GetSol();
+                int elementos=aux.GetValores().size()/num,i=0,pos;
+                int tam=aux.GetValores().size();
+                eliminados.resize(elementos);
+                
+                while(i<elementos){
+                    pos=(rand()%(tam-2))+1;
+                    if(aux.GetValores()[pos]!=-1){
+                        eliminados[i]=aux.GetValores()[pos];
+                        aux.GetValores()[pos]=-1;
+                        ++i;        
+                    }        
+                 }
+                /*He pensado en devolver la solucion por que, si se da el caso de que quisieramos guardar la solucion actual(La que declarada como atributo), solo habria que declarar fuera una solucion auxiliar he igualarla. 
+                El motivo puede ser que quisieramos volver a la última solucion valida, por ejejmplo.*/ 
+                return aux;
+            }
+            void reconstruir(Solucion parcial,const std::vector<int> &eliminados ){
+                int j=0;
+                for(int i=parcial.GetValores().size();i>-1;--i)
+                    if(parcial.GetValores()[i]==-1){
+                        parcial.GetValores()[i]=eliminados[j];
+                        ++j;
+                    } 
+            }   
+};
+
+
+
+
+#endif	/* LOCALSEARCH_HPP */
+

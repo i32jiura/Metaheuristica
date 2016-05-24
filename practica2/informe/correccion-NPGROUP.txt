@@ -1,0 +1,19 @@
+CORRECCIÓN INFORME 2
+====================
+
+Aspectos positivos:
+	- Conclusiones bastante completas
+	
+Aspectos negativos:
+	- Explicación demasiado extensa del código.
+	- Las gráficas son ilegibles.
+	- Las gráficas deberían comentarse más.
+	- Intuimos un problema grave de planteamiento en el hecho de variar iteraciones o vecindario. Pero no nos queda claro debido a los resultados que se muestran.
+
+Nota asignada: 6.5
+
+Grupo JARA:
+	Rafael Barbudo Lunar
+	Javier Barbero Gómez
+	Álvaro Andrés Belmonte Pérez
+	Aurora Esteban Toscano

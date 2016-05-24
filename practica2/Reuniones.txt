@@ -1,0 +1,13 @@
+Reunion 1:
+	Clases necesarias:
+	Class solucion(){Implementada en practica 1}
+	Class instance(){de la practica 1}
+Reunion 2:
+	TSP:
+		mejor mejora: Dani sensual
+		primera mejora: Guille follable(no homo)
+	KP:
+		mejor mejora: Cristian I Love you
+		primera mejora: El tio mas sexi de raboanales, y si no lo encontramos Jesús. :)	
+	Poner semilla en constructor de localSearch()
+	

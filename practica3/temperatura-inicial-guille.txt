@@ -1,0 +1,24 @@
+double TemperaturaInicial(const int& valorOptimoKP)
+	   {
+		   Solucion s1, s2;
+		   Miscelanea misc;
+		   double IE = 0;
+		   
+		   for (int i = 0; i < 10; i++)
+		   {
+			   // Tengo que coger una solucion inicial
+			   getValidSolution(s1, GetInstance().getMateriales());
+			   SetSol(s1);
+			   // Hago una solución vecina
+			   s2 = Neighoperator();
+			   
+			   IE = IE + (misc.Fitness(valorOptimoKP,s2.GetCoste())-misc.Fitness(valorOptimoKP,s1.GetCoste()));
+		   }
+		   
+		   IE = IE / 10;
+		   
+		   if(IE < 0)
+			   IE = abs(IE);
+		   
+		   return (-IE)/(log10(0.90));
+	}
